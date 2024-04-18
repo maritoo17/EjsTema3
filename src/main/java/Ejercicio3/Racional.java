@@ -32,6 +32,10 @@ public class Racional {
         return new Racional(nuevoNumerador, nuevoDenominador);
     }
 
+    public void simplificarPublico() {
+        simplificar();
+    }
+
     private void simplificar() {
         int gcd = gcd(numerador, denominador);
         numerador /= gcd;
